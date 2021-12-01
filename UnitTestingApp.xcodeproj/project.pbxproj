@@ -13,7 +13,19 @@
 		5FCB5F542757E78800EF4182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB5F522757E78800EF4182 /* Main.storyboard */; };
 		5FCB5F562757E78900EF4182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB5F552757E78900EF4182 /* Assets.xcassets */; };
 		5FCB5F592757E78900EF4182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB5F572757E78900EF4182 /* LaunchScreen.storyboard */; };
+		5FCB5F612757E79E00EF4182 /* SoundBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB5F602757E79E00EF4182 /* SoundBar.swift */; };
+		5FCB5F692757E9A500EF4182 /* SoundBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB5F682757E9A500EF4182 /* SoundBarTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FCB5F6A2757E9A500EF4182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FCB5F412757E78800EF4182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FCB5F482757E78800EF4182;
+			remoteInfo = UnitTestingApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5FCB5F492757E78800EF4182 /* UnitTestingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		5FCB5F552757E78900EF4182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FCB5F582757E78900EF4182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FCB5F5A2757E78900EF4182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FCB5F602757E79E00EF4182 /* SoundBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBar.swift; sourceTree = "<group>"; };
+		5FCB5F662757E9A500EF4182 /* UnitTestingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCB5F682757E9A500EF4182 /* SoundBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5FCB5F462757E78800EF4182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCB5F632757E9A500EF4182 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				5FCB5F4B2757E78800EF4182 /* UnitTestingApp */,
+				5FCB5F672757E9A500EF4182 /* UnitTestingAppTests */,
 				5FCB5F4A2757E78800EF4182 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				5FCB5F492757E78800EF4182 /* UnitTestingApp.app */,
+				5FCB5F662757E9A500EF4182 /* UnitTestingAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +87,17 @@
 				5FCB5F552757E78900EF4182 /* Assets.xcassets */,
 				5FCB5F572757E78900EF4182 /* LaunchScreen.storyboard */,
 				5FCB5F5A2757E78900EF4182 /* Info.plist */,
+				5FCB5F602757E79E00EF4182 /* SoundBar.swift */,
 			);
 			path = UnitTestingApp;
+			sourceTree = "<group>";
+		};
+		5FCB5F672757E9A500EF4182 /* UnitTestingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FCB5F682757E9A500EF4182 /* SoundBarTests.swift */,
+			);
+			path = UnitTestingAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = 5FCB5F492757E78800EF4182 /* UnitTestingApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5FCB5F652757E9A500EF4182 /* UnitTestingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FCB5F6C2757E9A500EF4182 /* Build configuration list for PBXNativeTarget "UnitTestingAppTests" */;
+			buildPhases = (
+				5FCB5F622757E9A500EF4182 /* Sources */,
+				5FCB5F632757E9A500EF4182 /* Frameworks */,
+				5FCB5F642757E9A500EF4182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FCB5F6B2757E9A500EF4182 /* PBXTargetDependency */,
+			);
+			name = UnitTestingAppTests;
+			productName = UnitTestingAppTests;
+			productReference = 5FCB5F662757E9A500EF4182 /* UnitTestingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					5FCB5F482757E78800EF4182 = {
 						CreatedOnToolsVersion = 13.1;
+					};
+					5FCB5F652757E9A500EF4182 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 5FCB5F482757E78800EF4182;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				5FCB5F482757E78800EF4182 /* UnitTestingApp */,
+				5FCB5F652757E9A500EF4182 /* UnitTestingAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +187,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5FCB5F642757E9A500EF4182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,10 +204,27 @@
 				5FCB5F512757E78800EF4182 /* ViewController.swift in Sources */,
 				5FCB5F4D2757E78800EF4182 /* AppDelegate.swift in Sources */,
 				5FCB5F4F2757E78800EF4182 /* SceneDelegate.swift in Sources */,
+				5FCB5F612757E79E00EF4182 /* SoundBar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCB5F622757E9A500EF4182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCB5F692757E9A500EF4182 /* SoundBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FCB5F6B2757E9A500EF4182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FCB5F482757E78800EF4182 /* UnitTestingApp */;
+			targetProxy = 5FCB5F6A2757E9A500EF4182 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5FCB5F522757E78800EF4182 /* Main.storyboard */ = {
@@ -338,6 +418,52 @@
 			};
 			name = Release;
 		};
+		5FCB5F6D2757E9A500EF4182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLQ3BB6947;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.UnitTestingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestingApp.app/UnitTestingApp";
+			};
+			name = Debug;
+		};
+		5FCB5F6E2757E9A500EF4182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SLQ3BB6947;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmitry.UnitTestingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestingApp.app/UnitTestingApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +481,15 @@
 			buildConfigurations = (
 				5FCB5F5E2757E78900EF4182 /* Debug */,
 				5FCB5F5F2757E78900EF4182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FCB5F6C2757E9A500EF4182 /* Build configuration list for PBXNativeTarget "UnitTestingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCB5F6D2757E9A500EF4182 /* Debug */,
+				5FCB5F6E2757E9A500EF4182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
