@@ -15,6 +15,8 @@
 		5FCB5F592757E78900EF4182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCB5F572757E78900EF4182 /* LaunchScreen.storyboard */; };
 		5FCB5F612757E79E00EF4182 /* SoundBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB5F602757E79E00EF4182 /* SoundBar.swift */; };
 		5FCB5F692757E9A500EF4182 /* SoundBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB5F682757E9A500EF4182 /* SoundBarTests.swift */; };
+		5FCB5F702757FAB200EF4182 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB5F6F2757FAB200EF4182 /* PersonTests.swift */; };
+		5FCB5F722757FBC800EF4182 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB5F712757FBC800EF4182 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		5FCB5F602757E79E00EF4182 /* SoundBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBar.swift; sourceTree = "<group>"; };
 		5FCB5F662757E9A500EF4182 /* UnitTestingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FCB5F682757E9A500EF4182 /* SoundBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundBarTests.swift; sourceTree = "<group>"; };
+		5FCB5F6F2757FAB200EF4182 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		5FCB5F712757FBC800EF4182 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				5FCB5F572757E78900EF4182 /* LaunchScreen.storyboard */,
 				5FCB5F5A2757E78900EF4182 /* Info.plist */,
 				5FCB5F602757E79E00EF4182 /* SoundBar.swift */,
+				5FCB5F712757FBC800EF4182 /* Person.swift */,
 			);
 			path = UnitTestingApp;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				5FCB5F682757E9A500EF4182 /* SoundBarTests.swift */,
+				5FCB5F6F2757FAB200EF4182 /* PersonTests.swift */,
 			);
 			path = UnitTestingAppTests;
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCB5F722757FBC800EF4182 /* Person.swift in Sources */,
 				5FCB5F512757E78800EF4182 /* ViewController.swift in Sources */,
 				5FCB5F4D2757E78800EF4182 /* AppDelegate.swift in Sources */,
 				5FCB5F4F2757E78800EF4182 /* SceneDelegate.swift in Sources */,
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FCB5F702757FAB200EF4182 /* PersonTests.swift in Sources */,
 				5FCB5F692757E9A500EF4182 /* SoundBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,3 +12,4 @@ class SoundBar {
         volume = min(max(value, 0), 100)
     }
 }
+

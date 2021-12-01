@@ -48,5 +48,4 @@ class SoundBarTests: XCTestCase {
             sut.setVolume(to: 100)
         }
     }
-
 }
